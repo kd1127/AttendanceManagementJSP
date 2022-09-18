@@ -1,9 +1,9 @@
-<%@page import="admin.InputBean"%>
+<%@page import="beans.InputBean"%>
 <%@page import="java.util.List"%>
 <%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id="bn" scope="session" class="admin.InputBean"/>
+<jsp:useBean id="bn" scope="session" class="beans.InputBean"/>
 
 <!DOCTYPE html>
 <html>
@@ -34,13 +34,11 @@
 		   </div>
 		<% } %>
 		
-		<!-- 以下テストプログラム -->
 		<% String str = (String)request.getAttribute("str"); %>
 			
 		<% if(str == "register_page"){
 				 bn = new InputBean(); %>
 		<% }  %>
-		<!-- ここまで -->
 		
 		<form action="../servlet/admin.InputAction" method="post">
 			<table class="tbeinput">
