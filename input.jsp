@@ -180,5 +180,6 @@
 			</div>
 		</form>
 		<% session.setAttribute("bn", bn); %>
+		<p>senshin.co.jp</p>
 	</body>
 </html>
